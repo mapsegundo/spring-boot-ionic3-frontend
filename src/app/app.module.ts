@@ -1,3 +1,4 @@
+import { StorageService } from './../services/storage.service';
 import { AuthService } from './../services/auth.service';
 import { ErrorInterceptorProvider } from './../interceptors/error-interceptor';
 import { BrowserModule } from '@angular/platform-browser';
@@ -29,6 +30,7 @@ import { CategoriaService } from '../services/domain/categoria.service';
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     CategoriaService,
     AuthService,
+    StorageService,
     ErrorInterceptorProvider
   ]
 })
