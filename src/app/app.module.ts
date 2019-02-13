@@ -1,3 +1,4 @@
+import { ErrorInterceptorProvider } from './../interceptors/error-interceptor';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
@@ -25,7 +26,8 @@ import { CategoriaService } from '../services/domain/categoria.service';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    CategoriaService
+    CategoriaService,
+    ErrorInterceptorProvider
   ]
 })
 export class AppModule {}
