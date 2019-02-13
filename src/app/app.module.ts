@@ -1,3 +1,4 @@
+import { AuthService } from './../services/auth.service';
 import { ErrorInterceptorProvider } from './../interceptors/error-interceptor';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
@@ -27,6 +28,7 @@ import { CategoriaService } from '../services/domain/categoria.service';
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     CategoriaService,
+    AuthService,
     ErrorInterceptorProvider
   ]
 })
