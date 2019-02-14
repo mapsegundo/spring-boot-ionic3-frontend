@@ -10,6 +10,7 @@ import {HttpClientModule} from '@angular/common/http';
 
 import { MyApp } from './app.component';
 import { CategoriaService } from '../services/domain/categoria.service';
+import { ClienteService } from '../services/domain/cliente.service';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { CategoriaService } from '../services/domain/categoria.service';
     CategoriaService,
     AuthService,
     StorageService,
+    ClienteService,
     ErrorInterceptorProvider
   ]
 })
