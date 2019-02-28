@@ -1,3 +1,4 @@
+import { CartService } from './../services/domain/cart.service';
 import { ProdutoService } from './../services/domain/produto.service';
 import { AuthInterceptorProvider } from './../interceptors/auth-interceptor';
 import { StorageService } from './../services/storage.service';
@@ -36,6 +37,7 @@ import { ClienteService } from '../services/domain/cliente.service';
     StorageService,
     ClienteService,
     ProdutoService,
+    CartService,
     AuthInterceptorProvider,
     ErrorInterceptorProvider
   ]
